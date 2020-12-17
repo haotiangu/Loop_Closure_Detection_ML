@@ -1,18 +1,9 @@
-#  Deep Point Cloud Based Retrieval for Large-Scale Place Recognition
-**Deep Point Cloud Based Retrieval for Large-Scale Place Recognition](https://arxiv.org/abs/1804.03492)** CVPR 2018, Salt Lake City, USA
+#  3D Point cloud based Place retrieval by Supervised learning
 
 ![pic-network](network_architecture4.png)
 
 ## Introduction
-The PointNetVLAD is a deep network that addresses the problem of large-scale place recognition through point cloud based retrieval. The arXiv version of PointNetVLAD can be found [here](https://arxiv.org/abs/1804.03492).
-```
-@inproceedings{uy2018pointnetvlad,
-      title={PointNetVLAD: Deep Point Cloud Based Retrieval for Large-Scale Place Recognition},
-      author={Uy, Mikaela Angelina and Lee, Gim Hee},
-      booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-      year={2018}
-}
-```
+The algorithm is a deep network that addresses the problem of large-scale place recognition through point cloud based retrieval.  
 ## Benchmark Datasets
 The benchmark datasets introdruced in this work can be downloaded [here](https://drive.google.com/open?id=1Wn1Lvvk0oAkwOUwR0R6apbrekdXAUg7D).
 * All submaps are in binary file format
@@ -48,7 +39,7 @@ sudo apt-get install python3-pip python3-dev python-virtualenv
 virtualenv --system-site-packages -p python3 ~/tensorflow
 source ~/tensorflow/bin/activate
 easy_install -U pip
-pip3 install --upgrade tensorflow-gpu==1.4.0
+pip3 install --upgrade tensorflow-gpu==2.21.0
 pip install scipy, pandas, sklearn
 ```
 ### Dataset set-up
@@ -79,11 +70,14 @@ To evaluate the model, run the following command:
 ```
 python evaluate.py
 ```
-
+### Visualize Point cloud bin file
+To visualize point cloud bin file run the following command:
+```
+python read_bin_new.py
+```
 ## Pre-trained Models
 The pre-trained models for both the baseline and refined networks can be downloaded [here](https://drive.google.com/open?id=1wYsJmfd2yfbK9DHjFHwEeU1a_x35od61)
 
 ## Submap generation
 Added the rough MATLAB code that was used for submap generation upon requests. Some functions are gotten from the toolbox of [Oxford Robotcar](https://robotcar-dataset.robots.ox.ac.uk/).
 
-Some clarification: The voxel grid filter was used to downsample the cloud to 4096, which was done by selecting a leaf size that initially downsamples the cloud close to 4096 points, after which we randomly add points to make the cloud have exactly 4096 points. Please feel free to send me an email (mikacuy@gmail.com) for any further questions.
