@@ -1,9 +1,5 @@
-# PointNetVLAD: Deep Point Cloud Based Retrieval for Large-Scale Place Recognition
-**[PointNetVLAD: Deep Point Cloud Based Retrieval for Large-Scale Place Recognition](https://arxiv.org/abs/1804.03492)** CVPR 2018, Salt Lake City, USA
-
-Mikaela Angelina Uy and Gim Hee Lee
-
-National University of Singapore
+#  Deep Point Cloud Based Retrieval for Large-Scale Place Recognition
+**Deep Point Cloud Based Retrieval for Large-Scale Place Recognition](https://arxiv.org/abs/1804.03492)** CVPR 2018, Salt Lake City, USA
 
 ![pic-network](network_architecture4.png)
 
@@ -34,12 +30,6 @@ The benchmark datasets introdruced in this work can be downloaded [here](https:/
 * Test/Inference submaps found in the folder "pointcloud_20m/" and its corresponding csv file is "pointcloud_locations_20m.csv"
 * Test/Inference submaps are mutually disjoint
 
-### NUS (Inhouse) Datasets
-
-* Each inhouse dataset has 5 runs
-* Training submaps are found in the folder "pointcloud_25m_10/" and its corresponding csv file is "pointcloud_centroids_10.csv"
-* Test/Infenrence submaps are found in the folder "pointcloud_25m_25/" and its corresponding csv file is "pointcloud_centroids_25.csv"
-* Training submaps are not mutually disjoint per run but test submaps are
 
 ## Project Code
 
@@ -51,7 +41,7 @@ The benchmark datasets introdruced in this work can be downloaded [here](https:/
 * Pandas
 * Sklearn
 
-Code was tested using Python 3 on Tensorflow 1.4.0 with CUDA 8.0
+Code was tested using Python 3 on Tensorflow 2.21.0 with CUDA 11.0
 
 ```
 sudo apt-get install python3-pip python3-dev python-virtualenv
@@ -97,6 +87,3 @@ The pre-trained models for both the baseline and refined networks can be downloa
 Added the rough MATLAB code that was used for submap generation upon requests. Some functions are gotten from the toolbox of [Oxford Robotcar](https://robotcar-dataset.robots.ox.ac.uk/).
 
 Some clarification: The voxel grid filter was used to downsample the cloud to 4096, which was done by selecting a leaf size that initially downsamples the cloud close to 4096 points, after which we randomly add points to make the cloud have exactly 4096 points. Please feel free to send me an email (mikacuy@gmail.com) for any further questions.
-
-## License
-This repository is released under MIT License (see LICENSE file for details).
