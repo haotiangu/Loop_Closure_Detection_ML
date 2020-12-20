@@ -25,12 +25,20 @@ The benchmark datasets introdruced in this work can be downloaded [here](https:/
 ## Project Code
 
 ### Pre-requisites
-* Python
-* CUDA
+## Hardware
+* Intel CPU:E5 generation
+* GPU: GTX 2080 Ti
+* Memories: 32GB or above
+## Software
+* Python3.6
+* CUDA10.1
 * Tensorflow 
 * Scipy
 * Pandas
 * Sklearn
+* Sklearn
+* Pytorch-Lighting
+* Numpy
 
 Code was tested using Python 3 on Tensorflow 2.21.0 with CUDA 11.0
 
@@ -64,11 +72,11 @@ python generate_test_sets.py
 ### Model Training and Evaluation
 To train our network, run the following command:
 ```
-python train_pointnetvlad.py
+python train_step.py
 ```
 To evaluate the model, run the following command:
 ```
-python evaluate.py
+python train_step.py
 ```
 ### Visualize Point cloud bin file
 To visualize point cloud bin file run the following command:
