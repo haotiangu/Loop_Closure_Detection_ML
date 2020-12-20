@@ -40,7 +40,7 @@ The benchmark datasets introdruced in this work can be downloaded [here](https:/
 * Pytorch-Lighting
 * Numpy
 
-Code was tested using Python 3 on Tensorflow 2.21.0 with CUDA 11.0
+Code was tested using Python 3 on Tensorflow 2.21.0 with CUDA 10.0
 
 ```
 sudo apt-get install python3-pip python3-dev python-virtualenv
