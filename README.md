@@ -32,10 +32,10 @@ The benchmark datasets introdruced in this work can be downloaded [here](https:/
 #### Software
 * Python3.6
 * CUDA10.1
+* Anaconda3
 * Tensorflow 
 * Scipy
 * Pandas
-* Sklearn
 * Sklearn
 * Pytorch-Lighting
 * Numpy
