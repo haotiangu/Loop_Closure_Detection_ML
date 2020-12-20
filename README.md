@@ -25,11 +25,11 @@ The benchmark datasets introdruced in this work can be downloaded [here](https:/
 ## Project Code
 
 ### Pre-requisites
-## Hardware
+#### Hardware
 * Intel CPU:E5 generation
 * GPU: GTX 2080 Ti
 * Memories: 32GB or above
-## Software
+#### Software
 * Python3.6
 * CUDA10.1
 * Tensorflow 
