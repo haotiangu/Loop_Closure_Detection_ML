@@ -83,8 +83,6 @@ To visualize point cloud bin file run the following command:
 ```
 python read_bin_new.py
 ```
-## Pre-trained Models
-The pre-trained models for both the baseline and refined networks can be downloaded [here](https://drive.google.com/open?id=1wYsJmfd2yfbK9DHjFHwEeU1a_x35od61)
 
 ## Submap generation
 Added the rough MATLAB code that was used for submap generation upon requests. Some functions are gotten from the toolbox of [Oxford Robotcar](https://robotcar-dataset.robots.ox.ac.uk/).
