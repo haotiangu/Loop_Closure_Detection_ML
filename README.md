@@ -1,4 +1,4 @@
-#  3D Point cloud based Place retrieval by Supervised learning
+#  3D Point cloud based Segmentation retrieval by Supervised learning
 
 ![pic-network](network_architecture4.png)
 
